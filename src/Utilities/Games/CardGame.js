@@ -77,7 +77,10 @@ const GuessGame = (props) => {
     let amount = parseInt(props.questionSettings[0].amount) - 1;
     if (allQuestions === undefined) return;
     if (step <= amount) {
+      console.log(step);
+      console.log(amount);
       if (step <= allQuestions.length) {
+        console.log(allQuestions.length);
         return (
           <div className={"center m-top-50"}>
             {props.questionSettings[0].mode === "terms" ? (
@@ -162,6 +165,7 @@ const GuessGame = (props) => {
           </div>
         );
       } else {
+        console.log("end");
         enableEndScreen();
       }
     } else {
