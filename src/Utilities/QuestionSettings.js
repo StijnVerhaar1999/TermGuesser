@@ -96,7 +96,6 @@ const QuestionSettings = (props) => {
 
     if (amountValue === "medium") {
       amount = "25";
-      console.log(getChapterLenght());
       if (amount > getChapterLenght()) {
         amount = getChapterLenght();
       }
